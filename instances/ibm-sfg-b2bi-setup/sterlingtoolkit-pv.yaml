@@ -1,0 +1,15 @@
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: sterlingb2bitoolkit-pv
+  labels:
+    failure-domain.beta.kubernetes.io/region: us-south
+    failure-domain.beta.kubernetes.io/zone: dal10
+spec:
+  capacity:
+    storage: 20Gi
+  accessModes:
+    - ReadWriteMany
+  nfs:
+    server: fsf-dal1002b-fz.adn.networklayer.com
+    path: /IBM02SEV2071092_121963/data01
