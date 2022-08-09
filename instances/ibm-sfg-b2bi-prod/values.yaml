@@ -6,9 +6,9 @@ service-account:
 ibm-sfg-prod:
   global:
     image:
-      repository: image-registry.openshift-image-registry.svc:5000/b2bi-prod/ubi
+      repository: registry.access.redhat.com/ubi7/ubi@sha256
     # Provide the tag value in double quotes
-      tag: latest
+      tag: 25904f0dbbbe259dffa87838304aa6634af7a6cec9f69574e545939603b73c36
       pullPolicy: IfNotPresent
       pullSecret: ibm-entitlement-key
   serviceAccount:
