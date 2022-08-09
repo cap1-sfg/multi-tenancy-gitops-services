@@ -6,9 +6,9 @@ service-account:
 ibm-sfg-prod:
   global:
     image:
-      repository: cp.icr.io/cp/ibm-sfg/sfg
+      repository: registry.access.redhat.com/ubi7/ubi
     # Provide the tag value in double quotes
-      tag: 6.1.0.1
+      tag: latest
       pullPolicy: IfNotPresent
       pullSecret: ibm-entitlement-key
   serviceAccount:
