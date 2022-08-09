@@ -6,7 +6,8 @@ service-account:
 ibm-sfg-prod:
   global:
     image:
-      repository: image-registry.openshift-image-registry.svc:5000/b2bi-prod/custom-sfg
+      repository: default-route-openshift-image-registry.itzroks-662001rtxj-un6r85-4b4a324f027aea19c5cbc0c3275c4656-0000.us-south.containers.appdomain.cloud
+/b2bi-prod/custom-sfg
     # Provide the tag value in double quotes
       tag: ubi-7.8
       pullPolicy: IfNotPresent
